@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <table border=1>
+      <tr>
+        <th>Landing Page</th>
+        <th>Software Name</th>
+        <th>Software Description</th>
+        <th>Software Download Link</th>
+      </tr>
+
+      
+        <% data.forEach(function(data) { %>
+          <tr>
+          <td><%= data.LandingPageUrl %></td>
+          <td><%= data.label %></td>
+          <td><%= data.description %></td>   
+          <td><%= data.label_link %> </td>
+
+        </tr>
+      <% }); %>
+      
+    </table>
+  </body>
+</html>
